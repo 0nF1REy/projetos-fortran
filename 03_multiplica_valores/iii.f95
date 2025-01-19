@@ -1,4 +1,4 @@
-program teste_fortran
+program multiplica_valores
     implicit none
     integer :: i 
     integer :: valor
@@ -7,4 +7,4 @@ program teste_fortran
     valor = valor * 5
     50 valor = valor * 10
     write(*,*) 'Valor de valor: ', valor
-end program teste_fortran
+end program multiplica_valores

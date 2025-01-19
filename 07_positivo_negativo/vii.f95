@@ -1,4 +1,4 @@
-PROGRAM verifica_numero
+PROGRAM positivo_negativo
     IMPLICIT NONE
     REAL :: numero
 
@@ -12,4 +12,4 @@ PROGRAM verifica_numero
     ELSE
         PRINT *, 'O número é zero.'
     END IF
-END PROGRAM verifica_numero
+END PROGRAM positivo_negativo
