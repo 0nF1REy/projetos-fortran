@@ -1,213 +1,331 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <title>FORTRAN</title>
     <!-- ===== META ===== -->
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="Author" content="Alan Ryan da Silva Domingues">
-    <meta content='#333333' name='theme-color' />
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Author" content="Alan Ryan da Silva Domingues" />
+    <meta content="#333333" name="theme-color" />
+    <meta name="robots" content="index, follow" />
     <!-- ==== OPEN GRAPH ==== -->
-    <meta property="og:title" content="FORTRAN">
-    <meta property="og:image" content="./assets/img/pagina-principal.png">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="FORTRAN" />
+    <meta property="og:image" content="./assets/img/pagina-principal.png" />
+    <meta property="og:type" content="website" />
     <!-- ===== SECURITY ===== -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
     <!-- ==== FAVICON and ICONS ==== -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./assets/icons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./assets/icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./assets/icons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./assets/icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./assets/icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./assets/icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./assets/icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./assets/icons/apple-touch-icon-152x152.png"
+    />
     <!-- ==== MICROSOFT TILE ==== -->
     <meta name="application-name" content="FORTRAN" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="./assets/icons/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="./assets/icons/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="./assets/icons/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="./assets/icons/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="./assets/icons/mstile-310x310.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/icons/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="./assets/icons/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="./assets/icons/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="./assets/icons/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="./assets/icons/mstile-310x310.png"
+    />
     <!-- ==== CSS and SCRIPT ==== -->
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/font.css">
-    <link rel="stylesheet" href="./styles/media.css">
-    <link rel="stylesheet" href="./styles/icon.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="stylesheet" href="./styles/icon.css" />
     <script src="./scripts/script.js" defer></script>
     <!-- ========== -->
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="scrollTopButton">
-        <i class="bi bi-arrow-up-short"></i>
+      <i class="bi bi-arrow-up-short"></i>
     </div>
     <header>
-        <h1>
-            <span class="logo">
-                <img src="./assets/images/fortran-logo.svg">
-            </span>
-            <span id="txt-header">ortran</span>
-
-        </h1>
+      <h1>
+        <span class="logo">
+          <img src="./assets/images/fortran-logo.svg" />
+        </span>
+        <span id="txt-header">ortran</span>
+      </h1>
     </header>
     <main>
-        <div class="contetnt">
-            <div class="card-wrap" id="card-wrap" role="list" aria-label="Lista de Projetos">
-                <article class="card-list">
-                    <a href="./projetos/01_hello_world/hello_world" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp"/>
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">hello_world</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href=".//projetos/02_num_dig/num_dig" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/02.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">num_dig</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/conversor-de-moedas-i.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/03.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Conversor de Moedas I</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/conversor-de-moedas-ii.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/02.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Conversor de Moedas II</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/analisador-de-numero-real.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/03.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Analisador de Número Real</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/anatomia-de-uma-divisao.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Anatomia de uma Divisão</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/informe-seu-salario.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Informe seu salário</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/raiz-quadrada-e-cubica.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Raiz Quadrada e Cúbica</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/medias-aritméticas.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Médias Aritméticas</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/calculando-sua-idade.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Calculando a sua idade</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/reajustador-de-precos.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Reajustador de Preços</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/calculadora-de-tempo.zip target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Calculadora de Tempo</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-                <article class="card-list">
-                    <a href="./projetos-compactados/caixa-eletronico.zip" target="_blank" class="card-listLink">
-                        <p class="card-listImage">
-                            <picture>
-                                <img src="./assets/images/01.webp">
-                            </picture>
-                        </p>
-                        <h2 class="card-listTitle">Caixa Eletrônico</h2>
-                        <p class="card-listText"></p>
-                    </a>
-                </article>
-            </div>
+      <div class="contetnt">
+        <div
+          class="card-wrap"
+          id="card-wrap"
+          role="list"
+          aria-label="Lista de Projetos"
+        >
+          <article class="card-list">
+            <a
+              href="./projetos/01_hello_world/hello_world"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">hello_world</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/02_num_dig/num_dig"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/02.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">num_dig</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/03_multiplica_valores/multiplica_valores"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/03.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">multiplica_valores</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/04_soma_int/soma_int"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/02.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">soma_int</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/05_variaveis/variaveis"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/03.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">variaveis</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/06_parametros_kind/parametros_kind"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">parametros_kind</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/07_positivo_negativo/positivo_negativo"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">positivo_negativo</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/08_loop/loop"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">loop</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/09_soma_ate_zero/soma_ate_zero"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">soma_ate_zero</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/10_impar_par/impar_par"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">impar_par</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/11_operadores_aritmeticos/operadores_aritmeticos"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">operadores_aritmeticos</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/12_operadores_logico/operadores_logico"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">operadores_logico</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/13_saida_dados_write/saida_dados_write"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">saida_dados_write</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
+          <article class="card-list">
+            <a
+              href="./projetos/14_condicionais/condicionais"
+              target="_blank"
+              class="card-listLink"
+            >
+              <p class="card-listImage">
+                <picture>
+                  <img src="./assets/images/01.webp" />
+                </picture>
+              </p>
+              <h2 class="card-listTitle">condicionais</h2>
+              <p class="card-listText"></p>
+            </a>
+          </article>
         </div>
+      </div>
     </main>
-    <footer>
-        ©2024 Alan Ryan
-    </footer>
-</body>
-
+    <footer>©2025 Alan Ryan</footer>
+  </body>
 </html>
