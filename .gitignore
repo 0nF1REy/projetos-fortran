@@ -1,0 +1,19 @@
+/build/
+/app/
+
+node_modules/
+
+package-lock.json
+
+*.log
+*.swp
+*.bak
+*.tmp
+
+.vscode/
+.idea/
+
+fpm.lock
+
+.DS_Store  # Arquivo específico do macOS
+Thumbs.db  # Arquivo específico do Windows
