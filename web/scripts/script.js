@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img.alt = "Imagem padrão";
 
         img.addEventListener("error", () => {
+            img.loading = "lazy";
             img.src = "./assets/images/default.webp";
             img.alt = "Imagem padrão";
         });
