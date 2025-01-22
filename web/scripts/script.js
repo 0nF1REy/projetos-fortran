@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "./assets/images/03.webp",
         "./assets/images/04.webp",
         "./assets/images/05.webp",
+        "./assets/images/06.webp",
+        "./assets/images/07.webp",
+        "./assets/images/08.webp",
+        "./assets/images/09.webp",
+        "./assets/images/10.webp",
+        "./assets/images/11.webp",
     ];
 
     const images = document.querySelectorAll(".dynamic-image");
@@ -45,3 +51,8 @@ document.getElementById('scrollTopButton').addEventListener('click', function ()
         behavior: 'smooth'
     });
 });
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+

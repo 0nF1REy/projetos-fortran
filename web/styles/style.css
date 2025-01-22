@@ -10,7 +10,24 @@ body {
   font-family: schibsted;
   font-weight: bold;
   color: #333;
-  background-image: linear-gradient(180deg, #010101, #734f96);
+  background-image: linear-gradient(180deg, #1c092b, #734f96);
+  user-select: none;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, transparent, #724f9620);
+  background-size: 5px 5px;
+  animation: starryBackground 10s linear infinite;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .logo {
@@ -100,9 +117,9 @@ footer {
   text-align: center;
   margin-top: 3rem;
   padding: 2rem 0;
-  color: #00ffff;
-  background-image: linear-gradient(135deg, #1d1265, #010101);
-  border-top: 2px solid #00ffff;
+  color: #cccccc;
+  background-image: linear-gradient(135deg, #221239, #1c092b);
+  border-top: 2px solid #cccccc;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
@@ -145,4 +162,12 @@ footer::before {
 
 #scrollTopButton i {
   font-size: 2.5rem;
+}
+
+.card-special {
+  background-image: url(../assets/images/particulas-espaciais.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #cccccc;
 }
