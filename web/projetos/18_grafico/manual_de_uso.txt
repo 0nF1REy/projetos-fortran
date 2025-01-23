@@ -1,0 +1,4 @@
+Executar os seguintes comandos:
+
+1. gnuplot
+2. plot 'nome_do_arquivo.dat' 
