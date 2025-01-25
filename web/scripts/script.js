@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "./assets/images/17.webp",
         "./assets/images/18.webp",
         "./assets/images/19.webp",
+        "./assets/images/20.webp",
+        "./assets/images/21.webp",
+        "./assets/images/22.webp",
+        "./assets/images/23.webp",
+        "./assets/images/24.webp",
+        "./assets/images/25.webp",
+        "./assets/images/26.webp",
+        "./assets/images/27.webp",
     ];
 
     const images = document.querySelectorAll(".dynamic-image");
