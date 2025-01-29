@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "./assets/images/25.webp",
         "./assets/images/26.webp",
         "./assets/images/27.webp",
+        "./assets/images/28.webp",
+        "./assets/images/29.webp",
+        "./assets/images/30.webp",
     ];
 
     const images = document.querySelectorAll(".dynamic-image");
