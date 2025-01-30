@@ -30,6 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "./assets/images/28.webp",
         "./assets/images/29.webp",
         "./assets/images/30.webp",
+        "./assets/images/31.webp",
+        "./assets/images/32.webp",
+        "./assets/images/33.webp",
+        "./assets/images/34.webp",
     ];
 
     const images = document.querySelectorAll(".dynamic-image");
