@@ -1,11 +1,27 @@
-@media (max-width: 900px) {
-    .card-list {
-        width: calc(50% - 20px);
-    }
-}
+@media (max-width: 767.98px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
 
-@media (max-width: 600px) {
-     .card-list {
-        width: 100%;
-    }
+  main .contetnt .card-wrap {
+    grid-template-columns: 1fr;
+  }
+  .card-list {
+    padding: 1rem;
+  }
+  .card-listLink {
+    flex-direction: column;
+  }
+  .card-listImage {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-listImage img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
