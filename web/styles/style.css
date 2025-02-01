@@ -12,7 +12,35 @@ body {
   font-family: schibsted;
   font-weight: bold;
   color: #333;
-  background-image: linear-gradient(180deg, #1c092b, #734f96);
+  background-image: linear-gradient(
+    180deg,
+    #1c092b,
+    #200b30,
+    #230d35,
+    #270f3a,
+    #2a113f,
+    #2e1344,
+    #311549,
+    #35174e,
+    #381953,
+    #3c1b58,
+    #3f1d5d,
+    #431f62,
+    #462167,
+    #270f3a,
+    #2a113f,
+    #2e1344,
+    #311549,
+    #35174e,
+    #381953,
+    #3c1b58,
+    #381953,
+    #3c1b58,
+    #3f1d5d,
+    #431f62,
+    #462167,
+    #1c092b
+  );
   user-select: none;
   min-height: 100vh;
   position: relative;
@@ -83,20 +111,24 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   list-style: none;
+  margin: 0; /* Adicionado */
+  max-width: 100%;
 }
 
 .card-list {
-  background-color: #fff;
+  background-image: linear-gradient(180deg, #734f96, transparent, #734f96);
+  color: #d9d9d9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
-.card-list:hover, .card-list.focus-style {
+.card-list:hover,
+.card-list.focus-style {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  color: #734f96;
+  color: #1c092b;
 }
 
 .card-listLink {
@@ -178,15 +210,40 @@ footer::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: #cccccc;
 }
 
-.other-projects {
+.card-special:hover {
+  background-image: url(../assets/images/particulas-espaciais.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #734f96;
+}
+
+.other-projects,
+.pic-pretty {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+}
+
+.pic-pretty {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-image: linear-gradient(180deg, #734f96, transparent, #734f96);
+}
+
+.pic-pretty img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-special-content {
@@ -199,14 +256,14 @@ footer::before {
 
 .card-special-link {
   text-decoration: none;
-  color: #333;
+  color: #cccccc;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .card-special-link:hover {
-  color: #734f96;
+  color: #1c092b;
 }
 
 .card-special-link picture {
