@@ -95,25 +95,29 @@
   </head>
 
   <body>
+    <!-- ===== CONTEÚDO ===== -->
+
+    <!-- ===== Botão para o topo ===== -->
     <div id="scrollTopButton">
       <i class="bi bi-arrow-up-short"></i>
     </div>
+
+    <!-- ===== header ===== -->
     <header>
       <h1>
         <span class="logo">
-          <img src="./assets/images/fortran-logo.svg" alt="Logo do Fortran" />
+          <a href="./">
+            <img src="./assets/images/fortran-logo.svg" alt="Logo do Fortran" />
+          </a>
         </span>
         <span id="txt-header">ortran</span>
       </h1>
     </header>
+
+    <!-- ===== main ===== -->
     <main>
-      <div class="contetnt">
-        <div
-          class="card-wrap"
-          id="card-wrap"
-          role="list"
-          aria-label="Lista de Projetos"
-        >
+      <div class="content">
+        <div class="card-wrap" role="list" aria-label="Lista de Projetos">
           <article class="card-list">
             <a
               href="./projetos/01_hello_world/hello_world"
@@ -654,9 +658,39 @@
               <p class="card-listText"></p>
             </a>
           </article>
+          <article class="card-list other-projects">
+            <h2 class="card-listTitle">Outros Projetos</h2>
+            <div class="card-special-content">
+              <a
+                href="https://0nf1rey.github.io/projetos-php/"
+                target="_blank"
+                class="card-special-link"
+              >
+                <picture>
+                  <img src="./assets/images/php-logo.svg" alt="logo php" />
+                  <h3 class="card-special-subtitle">PHP</h3>
+                </picture>
+              </a>
+              <a
+                href="https://0nf1rey.github.io/projetos-html-css-js/"
+                target="_blank"
+                class="card-special-link"
+              >
+                <picture>
+                  <img
+                    src="./assets/images/html-css-js-logo.png"
+                    alt="logo html,css,js"
+                  />
+                  <h3 class="card-special-subtitle">HTML, CSS, JS</h3>
+                </picture>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </main>
+
+    <!-- ===== footer ===== -->
     <footer>©2025 Alan Ryan</footer>
   </body>
 </html>

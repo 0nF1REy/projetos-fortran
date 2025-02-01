@@ -1,3 +1,4 @@
+/* ========= RESET UNIVERSAL ========= */
 *,
 *::before,
 *::after {
@@ -6,6 +7,7 @@
   padding: 0;
 }
 
+/* ========= BODY ========= */
 body {
   font-family: schibsted;
   font-weight: bold;
@@ -30,6 +32,7 @@ body::after {
   z-index: -1;
 }
 
+/* ========= HEADER ========= */
 .logo {
   display: inline-block;
   height: 1.5em;
@@ -66,13 +69,15 @@ img {
   display: block;
 }
 
-.contetnt {
+/* ========= CONTEÚDO ========= */
+.content {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding: 1rem;
 }
 
+/* ========= CARD ========= */
 .card-wrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -88,9 +93,10 @@ img {
   transition: transform 0.3s ease;
 }
 
-.card-list:hover {
+.card-list:hover, .card-list.focus-style {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #734f96;
 }
 
 .card-listLink {
@@ -112,6 +118,7 @@ img {
   line-height: 1.6;
 }
 
+/* ========= FOOTER ========= */
 footer {
   font-family: "gamelia";
   text-align: center;
@@ -139,6 +146,7 @@ footer::before {
   opacity: 0.6;
 }
 
+/* ========= BOTÃO PARA O TOPO ========= */
 #scrollTopButton {
   display: none;
   position: fixed;
@@ -164,10 +172,56 @@ footer::before {
   font-size: 2.5rem;
 }
 
+/* ========= CARDS DIFERENCIAIS ========= */
 .card-special {
   background-image: url(../assets/images/particulas-espaciais.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #cccccc;
+}
+
+.other-projects {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card-special-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.card-special-link {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-special-link:hover {
+  color: #734f96;
+}
+
+.card-special-link picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-special-subtitle {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.card-special-link img {
+  width: 100px;
+  height: auto;
+  display: block;
 }

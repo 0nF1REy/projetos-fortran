@@ -1,3 +1,6 @@
+// =========================================================================
+//  FUNCIONALIDADE: CARREGAMENTO DAS IMAGENS DINÂMICAS
+// =========================================================================
 document.addEventListener("DOMContentLoaded", () => {
     const imageUrls = [
         "./assets/images/01.webp",
@@ -64,6 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// =========================================================================
+//  FUNCIONALIDADE: EXIBIÇÃO/OCULTAÇÃO DO BOTÃO "IR PARA O TOPO"
+// =========================================================================
 window.addEventListener('scroll', function () {
     const scrollTopButton = document.getElementById('scrollTopButton');
     if (window.scrollY > 200) {
@@ -73,6 +79,9 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// =========================================================================
+//  FUNCIONALIDADE: ROLAGEM SUAVE PARA O TOPO DA PÁGINA
+// =========================================================================
 document.getElementById('scrollTopButton').addEventListener('click', function () {
     window.scrollTo({
         top: 0,
@@ -80,7 +89,60 @@ document.getElementById('scrollTopButton').addEventListener('click', function ()
     });
 });
 
+// =========================================================================
+//  FUNCIONALIDADE: BLOQUEIO DO MENU DE CONTEXTO (CLIQUE COM O BOTÃO DIREITO)
+// =========================================================================
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
 
+// =========================================================================
+//  FUNCIONALIDADE: LÓGICA PARA O TECLADO
+// =========================================================================
+const cards = document.querySelectorAll(".card-list");
+let currentCardIndex = -1;
+
+// =========================================================================
+//  FUNÇÃO: GERENCIAMENTO DO ESTILO DE FOCO DO CARD (ADICIONA/REMOVE)
+// =========================================================================
+function applyFocusStyles(card) {
+    card.classList.add('focus-style')
+}
+
+function removeFocusStyles(card) {
+    card.classList.remove('focus-style')
+}
+
+// =========================================================================
+//  FUNÇÃO: NAVEGAÇÃO ENTRE OS CARDS COM AS SETAS
+// =========================================================================
+function navigateCards(direction) {
+    if (currentCardIndex !== -1) {
+        removeFocusStyles(cards[currentCardIndex]);
+    }
+
+    if (direction === "next") {
+        currentCardIndex = (currentCardIndex + 1) % cards.length;
+    } else if (direction === "prev") {
+        currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+    }
+    applyFocusStyles(cards[currentCardIndex]);
+
+    cards[currentCardIndex].focus();
+}
+
+// =========================================================================
+//  FUNCIONALIDADE: EVENTO DE TECLADO PARA NAVEGAÇÃO E AÇÃO
+// =========================================================================
+document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") {
+        navigateCards("next");
+    } else if (e.key === "ArrowLeft") {
+        navigateCards("prev");
+    } else if (e.key === "Enter" && currentCardIndex !== -1) {
+        const link = cards[currentCardIndex].querySelector(".card-listLink");
+        if (link) {
+            link.click();
+        }
+    }
+});
