@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "./assets/images/44.webp",
         "./assets/images/45.webp",
         "./assets/images/46.webp",
+        "./assets/images/47.webp",
+        "./assets/images/48.webp",
+        "./assets/images/49.webp",
     ];
 
     const images = document.querySelectorAll(".dynamic-image");
