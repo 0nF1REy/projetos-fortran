@@ -1,27 +1,51 @@
-@media (max-width: 767.98px) {
-  header h1 {
-    font-size: 1.8rem;
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
   }
 
-  main .contetnt .card-wrap {
-    grid-template-columns: 1fr;
+  /* ===== HEADER ===== */
+  header h1 {
+    font-size: 2rem;
+    align-items: center;
+    margin: 1rem 0;
   }
-  .card-list {
+
+  /* ===== MAIN ===== */
+  main .card-list {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  main .card-list:hover,
+  main .card-list.focus-style {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  main .card-listTitle {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  main .other-projects {
     padding: 1rem;
   }
-  .card-listLink {
-    flex-direction: column;
-  }
-  .card-listImage {
+
+  main .pic-pretty img {
     width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  .card-listImage img {
-    max-height: 100%;
-    max-width: 100%;
+
+  main .card-special-link img {
+    width: 115px;
+  }
+
+  /* ===== OTHER ===== */
+  #scrollTopButton {
+    bottom: 20px;
+    right: 20px;
+    padding: 8px;
+  }
+
+  #scrollTopButton i {
+    font-size: 2rem;
   }
 }
