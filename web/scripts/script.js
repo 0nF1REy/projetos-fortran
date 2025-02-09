@@ -205,3 +205,41 @@ document.addEventListener("keydown", (e) => {
         }
     }
 });
+
+// =========================================================================
+//  FUNCIONALIDADE: SALVAMENTO DA POSIÇÃO DE ROLAGEM ANTES DO FECHAMENTO DA PÁGINA
+// =========================================================================
+window.addEventListener('beforeunload', function () {
+    try {
+        const scrollPosition = window.scrollY;
+        if (typeof scrollPosition === 'number') {
+            localStorage.setItem('scrollPosition', String(scrollPosition));
+        } else {
+            console.warn("Scroll position is not a number.  Not saving scroll position.");
+        }
+    } catch (error) {
+        console.error("Error saving scroll position to localStorage:", error);
+    }
+});
+
+// =========================================================================
+//  FUNCIONALIDADE: RECUPERAÇÃO DA POSIÇÃO DE ROLAGEM AO CARREGAR A PÁGINA
+// =========================================================================
+window.addEventListener('load', function () {
+    try {
+        const savedScrollPosition = localStorage.getItem('scrollPosition');
+
+        if (savedScrollPosition) {
+            const parsedScrollPosition = Number(savedScrollPosition);
+
+            if (!isNaN(parsedScrollPosition)) {
+                window.scrollTo(0, parsedScrollPosition);
+            } else {
+                console.warn("Invalid scroll position found in localStorage:", savedScrollPosition);
+                localStorage.removeItem('scrollPosition');
+            }
+        }
+    } catch (error) {
+        console.error("Error retrieving scroll position from localStorage:", error);
+    }
+});
