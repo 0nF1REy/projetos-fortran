@@ -1,6 +1,6 @@
-// =========================================================================
+// =====================================================================
 //  FUNCIONALIDADE: CARREGAMENTO DAS IMAGENS DINÂMICAS
-// =========================================================================
+// =====================================================================
 document.addEventListener("DOMContentLoaded", () => {
     const imageUrls = [
         "./assets/images/01.webp",
@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// =========================================================================
+// =====================================================================
 //  FUNCIONALIDADE: EXIBIÇÃO/OCULTAÇÃO DO BOTÃO "IR PARA O TOPO"
-// =========================================================================
+// =====================================================================
 window.addEventListener('scroll', function () {
     const scrollTopButton = document.getElementById('scrollTopButton');
     if (window.scrollY > 200) {
@@ -111,9 +111,9 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// =========================================================================
+// =====================================================================
 //  FUNCIONALIDADE: ROLAGEM SUAVE PARA O TOPO DA PÁGINA
-// =========================================================================
+// =====================================================================
 document.getElementById('scrollTopButton').addEventListener('click', function () {
     window.scrollTo({
         top: 0,
@@ -121,9 +121,9 @@ document.getElementById('scrollTopButton').addEventListener('click', function ()
     });
 });
 
-// =========================================================================
-//  FUNCIONALIDADE: BLOQUEIO DO MENU DE CONTEXTO (CLIQUE COM O BOTÃO DIREITO)
-// =========================================================================
+// =====================================================================
+//  FUNCIONALIDADE: BLOQUEIO DO MENU DE CONTEXTO (CLIQUE: BOTÃO DIREITO)
+// =====================================================================
 document.addEventListener("contextmenu", function (event) {
     event.preventDefault();
 
@@ -155,15 +155,15 @@ document.addEventListener("contextmenu", function (event) {
     }, 3000);
 });
 
-// =========================================================================
+// =====================================================================
 //  FUNCIONALIDADE: LÓGICA PARA O TECLADO
-// =========================================================================
+// =====================================================================
 const cards = document.querySelectorAll(".card-list");
 let currentCardIndex = -1;
 
-// =========================================================================
+// =====================================================================
 //  FUNÇÃO: GERENCIAMENTO DO ESTILO DE FOCO DO CARD (ADICIONA/REMOVE)
-// =========================================================================
+// =====================================================================
 function applyFocusStyles(card) {
     card.classList.add('focus-style')
 }
@@ -172,9 +172,9 @@ function removeFocusStyles(card) {
     card.classList.remove('focus-style')
 }
 
-// =========================================================================
+// =====================================================================
 //  FUNÇÃO: NAVEGAÇÃO ENTRE OS CARDS COM AS SETAS
-// =========================================================================
+// =====================================================================
 function navigateCards(direction) {
     if (currentCardIndex !== -1) {
         removeFocusStyles(cards[currentCardIndex]);
@@ -190,9 +190,9 @@ function navigateCards(direction) {
     cards[currentCardIndex].focus();
 }
 
-// =========================================================================
+// =====================================================================
 //  FUNCIONALIDADE: EVENTO DE TECLADO PARA NAVEGAÇÃO E AÇÃO
-// =========================================================================
+// =====================================================================
 document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight") {
         navigateCards("next");
@@ -206,9 +206,9 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// =========================================================================
-//  FUNCIONALIDADE: SALVAMENTO DA POSIÇÃO DE ROLAGEM ANTES DO FECHAMENTO DA PÁGINA
-// =========================================================================
+// =====================================================================
+//  FUNCIONALIDADE: SALVA POSIÇÃO DE ROLAGEM ANTES DO FECHAMENTO DA PÁG.
+// =====================================================================
 window.addEventListener('beforeunload', function () {
     try {
         const scrollPosition = window.scrollY;
@@ -222,9 +222,9 @@ window.addEventListener('beforeunload', function () {
     }
 });
 
-// =========================================================================
-//  FUNCIONALIDADE: RECUPERAÇÃO DA POSIÇÃO DE ROLAGEM AO CARREGAR A PÁGINA
-// =========================================================================
+// =====================================================================
+//  FUNCIONALIDADE: RECUPERAÇÃO DA POSIÇÃO DE ROLAGEM AO CARREGAR A PÁG.
+// =====================================================================
 window.addEventListener('load', function () {
     try {
         const savedScrollPosition = localStorage.getItem('scrollPosition');
