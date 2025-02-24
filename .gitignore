@@ -1,19 +1,24 @@
+# Diretórios de build e aplicação
 /build/
 /app/
 
+# Dependências e arquivos de lock do npm
 node_modules/
-
 package-lock.json
 
+# Arquivos de log e temporários
 *.log
 *.swp
 *.bak
 *.tmp
 
+# Diretórios de IDEs
 .vscode/
 .idea/
 
+# Arquivo de lock do FPM
 fpm.lock
 
-.DS_Store  # Arquivo específico do macOS
-Thumbs.db  # Arquivo específico do Windows
+# Arquivos específicos do macOS e Windows
+.DS_Store
+Thumbs.db
