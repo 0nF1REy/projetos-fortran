@@ -1,15 +1,19 @@
+<h1 align="center">
+  Projetos Fortran
+</h1>
+
 <div align="center">
 
-# Projetos Fortran 
+![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
+![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+
 <img src="./readme_assets/fortran-logo.svg" width="100px;" alt="fortran logo"/>
 
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-[![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://0nf1rey.github.io/projetos-fortran/web/index.html)
-![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
+</div>
+
+## 📖 Descrição
 
 Este website é um catálogo dedicado a projetos desenvolvidos em Fortran, com ênfase em suas aplicações práticas. Projetado com responsividade e intuitividade, oferece uma experiência de navegação fluida e uma organização lógica do conteúdo. Cada projeto é detalhado com exemplos de código e links para recursos complementares, facilitando o estudo e a replicação das soluções apresentadas.
-
-</div>
 
 ## Sumário
 
@@ -80,6 +84,10 @@ Se você deseja contribuir com o projeto, siga os seguintes passos:
 
 - **<a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716" target="_blank">💾 Padrão de commit</a>**
 
-## Licença
+## 📜 Licença
 
-<a href="./LICENSE" target="_blank"><b>Licença MIT</b></a>
+Este projeto está sob a **licença MIT**. Consulte o arquivo **[LICENSE](LICENSE)** para obter mais detalhes.
+
+> ℹ️ **Aviso de Licença:** © 2025 Alan Ryan da Silva Domingues. Este projeto está licenciado sob os termos da licença MIT. Isso significa que você pode usá-lo, copiá-lo, modificá-lo e distribuí-lo com liberdade, desde que mantenha os avisos de copyright.
+
+⭐ Se este repositório foi útil para você, considere dar uma estrela!
