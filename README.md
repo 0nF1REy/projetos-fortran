@@ -7,7 +7,7 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
 ![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 
-<img src="./readme_assets/fortran-logo.svg" width="100px;" alt="fortran logo"/>
+<img src="./readme_images/fortran-logo.svg" width="100px;" alt="fortran logo"/>
 
 </div>
 
@@ -30,59 +30,81 @@ Este website é um catálogo dedicado a projetos desenvolvidos em Fortran, com �
 
 ## Página Principal do Projeto
 
-<img src="./web/assets/images/pagina-principal.png" alt="Página principal do projeto"/>
+<img src="./readme_images/pagina-principal.png" alt="Página principal do projeto"/>
+
+</div>
+
+## 👤 Sobre o Desenvolvedor
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center">
+        <br>
+        <a href="https://github.com/0nF1REy" target="_blank">
+          <img src="./readme_images/alan-ryan.jpg" height="160" alt="Foto de Alan Ryan" style="border-radius:50%;border:3px solid #0077B5;">
+        </a>
+        </p>
+        <a href="https://github.com/0nF1REy" target="_blank">
+          <strong>Alan Ryan</strong>
+        </a>
+        </p>
+        ☕ Peopleware | Tech Enthusiast | Code Slinger ☕
+        <br>
+        Apaixonado por código limpo, arquitetura escalável e experiências digitais envolventes
+        </p>
+          Conecte-se comigo:
+        </p>
+        <a href="https://www.linkedin.com/in/alan-ryan-b115ba228" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Alan_Ryan-0077B5?style=flat&logo=linkedin" alt="LinkedIn">
+        </a>
+        <a href="https://gitlab.com/alanryan619" target="_blank">
+          <img src="https://img.shields.io/badge/GitLab-@0nF1REy-FCA121?style=flat&logo=gitlab" alt="GitLab">
+        </a>
+        <a href="mailto:alanryan619@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Email-alanryan619@gmail.com-D14836?style=flat&logo=gmail" alt="Email">
+        </a>
+        </p>
+    </td>
+  </tr>
+</table>
 
 </div>
 
 ---
 
-<div align="center">
-<span style="font-size: 2em">Autor 🧑🛡️</span>
-  <table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/0nF1REy" target="_blank">
-        <img src="./readme_assets/2025-01-alan-ryan.jpg" height="160px;" alt="Foto de Alan Ryan"/><br>
-          <b>Alan Ryan</b>  
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-
 ## 📫 Contribuir
 
-Se você deseja contribuir com o projeto, siga os seguintes passos:
+Contribuições são muito bem-vindas! Se você deseja contribuir com o projeto, por favor, siga estes passos:
 
-1. **Faça um fork** do repositório.
+1.  **Faça um Fork** do repositório.
 
-2. **Crie uma branch** com a sua funcionalidade:
+2.  **Crie uma nova Branch** para sua feature ou correção:
 
-   ```bash
-   git checkout -b feature/minha-funcionalidade
-   ```
+    ```bash
+    git checkout -b feature/nome-da-feature
+    ```
 
-3. **Faça as alterações necessárias**.
+3.  **Faça suas alterações** e realize o commit:
 
-4. **Faça um commit** com suas alterações:
+    ```bash
+    git commit -m "feat: Adiciona nova feature"
+    ```
 
-   ```bash
-   git commit -m "Adicionado minha funcionalidade"
-   ```
+4.  **Envie suas alterações** para o seu fork:
 
-5. **Envie para o repositório remoto**:
+    ```bash
+    git push origin feature/nome-da-feature
+    ```
 
-   ```bash
-   git push origin feature/minha-funcionalidade
-   ```
+5.  **Abra um pull request** para a branch `main` do repositório original.
 
-6. **Abra um pull request** para a branch `main` do projeto original.
+## 📚 Recursos Adicionais
 
-### Documentações úteis
+- **<a href="https://www.atlassian.com/br/git/tutorials/making-a-pull-request" target="_blank">📝 Como criar um Pull Request</a>**
 
-- **<a href="https://www.atlassian.com/br/git/tutorials/making-a-pull-request" target="_blank">📝 Como criar uma solicitação pull</a>**
-
-- **<a href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716" target="_blank">💾 Padrão de commit</a>**
+- **<a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">💾 Padrão de Commits Convencionais</a>**
 
 ## 📜 Licença
 
